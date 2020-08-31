@@ -34,3 +34,8 @@ Route::get('/pizzas', function () {
         
         ]);
 });
+
+Route::get('/pizzas/{id}', function ($id) {
+    //use variable id to query database
+    return view('details', ['id' => $id]);
+});

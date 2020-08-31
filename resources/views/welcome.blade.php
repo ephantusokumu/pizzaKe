@@ -19,7 +19,7 @@
                 <div class="title m-b-md">
                    <img src='/img/piza.jpg' class='center'>
                     The Reliable Pizza House
-                    {{$name}}
+                    {{$name ?? ''}}
                 </div>
             </div>
         </div>
