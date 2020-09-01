@@ -13,15 +13,10 @@
            @endfor -->
            @foreach($pizzas as $pizza)
            <div>
-           {{
-               $loop-> index
-           }}
-           {{
-               $pizza['type']
-           }} - 
-           {{
-               $pizza['base']
-           }}
+           {{$pizza->name}} - {{$pizza->type}} - {{$pizza->base}}
+
+           </div>
+           
            @endforeach
            </div>
 
