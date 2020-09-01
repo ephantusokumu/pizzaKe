@@ -1,14 +1,14 @@
 @extends('layouts.layout')
      @section('content')
-        <div class="flex-center position-ref full-height">
-            <div class="content">
-                <div class="title m-b-md">
-                    Pizza's lists - {{$id}}
-                </div>
-          
-           </div>
-
-            </div>
+        <div class="wrapper pizza=details">
+           <h1>
+           Order for {{ $pizza->name}}
+           </h1>
+           <p class="type">Type- {{$pizza->type}} </p>
+           <p class="type">Base- {{$pizza->base}} </p>
         </div>
+        <a href="/pizzas" class="back">
+        Back to all
+         </a>
 @endsection
  
